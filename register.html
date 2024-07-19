@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Voter Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Voter Registration Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Registration</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        .registerform{
+            background-color: rgba(226, 222, 222, 0.8);
+            padding: 20px;
+            position:relative;
+            height: 100%;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 20px auto;
+            margin-right: 75%;
+            box-shadow: 10px rgba(19, 1, 1, 0.1);
+        }
+
+.box{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+
+}
+.loginbutton{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+background-color: rgba(67, 131, 101, 0.8);
+
+}
+
+</style>
+    <main>
+
+        
+        <h2>Registeration for the 2024 general election</h2>
+
+        <div class="registerform">
+        <form action="register.php" method="post" class = "registrationForm">
+
+
+    <label for="name">UserName </label>   <br>
+    <input class="box" type="text" id="name" name="name" placeholder="Name" required>   <br>
+    <br>
+
+    <label for="email">Email </label>  <br>
+    <input class="box" type="email" id="email" name="email" placeholder="Email" required>  <br>
+    <br>
+
+    <label for="password">Password </label>  <br>
+    <input class="box" type="password" id="password" name="password" placeholder="Password" required>  <br>
+    <br>
+
+    <label for="confirm_password">Confirm Password </label> <br>
+    <input class="box" type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password" required>  <br>
+    <br>
+
+    <button class="loginbutton" type="submit">Register</button>
+        </form>
+    </div>
+
+    </main>
+    <footer>
+        <p> 2024 Voter Registration Portal</p>
+    </footer>
+</body>
+</html>
